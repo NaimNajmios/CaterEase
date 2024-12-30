@@ -18,10 +18,9 @@
         <div class="side-nav-logo">
             <img src="images/Fusion Flavors 3.png" alt="Logo">
         </div>
-        <a href="#section1"></a>
-        <a href="#section2"></a>
-        <a href="#section3"></a>
-        <a href="#section4"></a>
+        <a href="#section1">Get to Know Us</a>
+        <a href="#section2">Why CaterEase?</a>
+        <a href="#section3">Client Love</a>
     </div>
 
     <div class="content">
@@ -34,6 +33,7 @@
                 </div>
             </header>
         </div>
+        
         <!-- Navigation bar for page -->
         <div class="navbarContainer">
             <nav class="navbar">
@@ -41,6 +41,7 @@
                     <!-- icon beside nav -->
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
+                    <li><a href="packageservices.html">Package & Service</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -48,10 +49,12 @@
                 </ul>
             </nav>
         </div>
+
         <!-- Article -->
         <div class="mainArticleContainer">
-            <article class="mainArticle">
+            <article id="section1" class="mainArticle">
                 <h2>Elevate Your Event with CaterEase</h2>
+                <img id="" src="images/person/indexfingerchef.jpeg" alt="chef">
                 <p><strong>Your Vision, Our Expertise</strong></p>
                 <p>
                     Discover the epitome of culinary excellence with CaterEase. Our dedicated team of chefs and event
@@ -72,7 +75,7 @@
             </article>
         </div>
         <!-- Section -->
-        <div class="mainSectionContainer">
+        <div id="section2" class="mainSectionContainer">
             <section class="services-offering-section">
                 <h2>Why Choose Us?</h2>
                 <div class="services-offering-card">
@@ -81,7 +84,10 @@
                         <i class="fas fa-utensils"></i>
                         <div class="container">
                             <h4><b>Customizable Catering Services</b></h4>
-                            <p>Description</p>
+                            <em>
+                                <p>We tailor our menus and service styles to perfectly fit your unique event needs and
+                                    preferences.</p>
+                            </em>
                         </div>
                     </div>
                     <div class="card">
@@ -89,7 +95,10 @@
                         <i class="fas fa-birthday-cake"></i>
                         <div class="container">
                             <h4><b>Exquisite Flavors and Decorations</b></h4>
-                            <p>Description</p>
+                            <p><em>
+                                    Our expert chefs create delicious dishes with stunning presentations, enhancing the
+                                    visual appeal of your event.
+                                </em></p>
                         </div>
                     </div>
                     <div class="card">
@@ -97,7 +106,11 @@
                         <i class="fas fa-users"></i>
                         <div class="container">
                             <h4><b>Exceptional Customer Service</b></h4>
-                            <p>Description</p>
+                            <em>
+                                <p>We provide personalized attention and dedicated support throughout the entire
+                                    planning
+                                    process.</p>
+                            </em>
                         </div>
                     </div>
                     <div class="card">
@@ -105,36 +118,37 @@
                         <i class="fas fa-shield-alt"></i>
                         <div class="container">
                             <h4><b>Quality Assurance</b></h4>
-                            <p>Description</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <!-- fa Icon -->
-                        <i class="fas fa-credit-card"></i>
-                        <div class="container">
-                            <h4><b>Flexible Payment Options</b></h4>
-                            <p>Description</p>
+                            <p><em>
+                                    We prioritize using the freshest ingredients and maintaining strict quality control
+                                    standards.
+                                </em></p>
                         </div>
                     </div>
                 </div>
+                <!-- Call to action, button -->
+                <button><a href="contact.html">Get A Quote!</a></button>
             </section>
         </div>
 
         <!-- Testimonials -->
-        <div class="testimonials-container">
+        <div id="section3" class="testimonials-container">
             <section class="testimonials-section">
                 <h2>What Our Clients Say</h2>
                 <div class="testimonials">
                     <div class="testimonials-card">
-                        <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:90px">
-                        <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-                        <p>John Doe saved us from a web disaster.</p>
+                        <img src="images/person/garyoldman.jpg" alt="Avatar" style="width:90px">
+                        <p><span>Gary Oldman</span> CEO at Leon Professional</p>
+                        <p>"The food at our wedding was absolutely incredible! Our guests raved about the flavors and
+                            presentation. CaterEase exceeded our expectations in every way. We highly recommend them!"
+                        </p>
                     </div>
 
                     <div class="testimonials-card">
-                        <img src="/w3images/avatar_g2.jpg" alt="Avatar" style="width:90px">
-                        <p><span>Rebecca Flex.</span> CEO at Company.</p>
-                        <p>No one is better than John Doe.</p>
+                        <img src="images/person/rdj.webp" alt="Avatar" style="width:90px">
+                        <p><span>Robert Downey JR</span> CEO at Oppenheimer</p>
+                        <p>"CaterEase was able to perfectly accommodate our dietary restrictions and create a delicious
+                            and diverse menu for our guests. They were very attentive to our needs and went above and
+                            beyond to make sure everyone was happy. We were extremely satisfied with their service."</p>
                     </div>
                 </div>
             </section>
