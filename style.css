@@ -27,9 +27,7 @@ html {
 }
 
 .icon {
-    margin-right: 300px;
-
-    /* Indent */
+    margin-right: 20px;
 }
 
 
@@ -118,6 +116,7 @@ nav {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
+    transition: 0.3s ease-in-out;
     background-color: white;
     color: #36180a;
 }
@@ -409,6 +408,95 @@ a {
 
 /* End of menu box */
 
+/* Gallery */
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.aspect-ratio-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    background: #000;
+    border-radius: 15px;
+}
+
+.aspect-ratio-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px;
+    }
+}
+
+/* end of gallery*/
+
 /* FAQ box */
 
 .FAQcontainer {
@@ -432,6 +520,7 @@ a {
 
 .active,
 .collapsible:hover {
+    transition: 0.3s ease-in-out;
     background-color: #36180a;
     color: white;
 }
@@ -627,6 +716,42 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Vision and mission */
+
+.vision-mission {
+    /* Side by side */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contentvm {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentvm h2 {
+    /* Font */
+    font-family: 'Pacifico', cursive;
+    /* Size */
+    font-size: 40px;
+    /* Font weight */
+    font-weight: normal;
+    /* Font style */
+    font-style: normal;
+    /* Margin left */
+    margin-left: 20%;
+}
+
+.contentvm p {
+    /* Italic */
+    font-style: italic;
+}
+
 /* Location and contact */
 .location-contact {
     /* Side by side */
@@ -646,7 +771,6 @@ button:hover {
 
 /* package and services*/
 .border {
-
     background-color: #f8d029;
     padding: 20px;
     margin-bottom: 20px;
@@ -656,15 +780,13 @@ button:hover {
     justify-content: left;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-
 }
 
 .package-image {
-
+    border-radius: 15px;
     width: 35%;
     height: auto;
-    margin-right: 40px;
+    margin-right: 20px;
     /* Shadow */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -674,11 +796,28 @@ button:hover {
     background-color: #fff;
     padding: 15px;
     padding-right: 40%;
+    height: auto;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
+
+/* Font styling */
+/* -------------------------------------------- */
+.italicfont {
+    font-style: italic;
+}
+
+.boldfont {
+    font-weight: bold;
+}
+
+.pacificofont {
+    font-family: 'Pacifico', cursive;
+}
+
+/* -------------------------------------------- */
 
 footer {
     background-color: #f8d029;

@@ -43,3 +43,26 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+function autoSlideshow() {
+  const groups = ["event1", "event2", "event3"];
+  const interval = 3000; // Transition every 3 seconds
+  const slideIndex = {};
+
+  groups.forEach((group) => {
+    slideIndex[group] = 0; // Initialize index
+    const slides = document.querySelectorAll(`.${group}`);
+
+    function showSlides() {
+      slides.forEach((slide) => (slide.style.display = "none")); // Hide all slides
+      slideIndex[group]++;
+      if (slideIndex[group] > slides.length) slideIndex[group] = 1; // Loop back to the first slide
+      slides[slideIndex[group] - 1].style.display = "block"; // Show current slide
+    }
+
+    showSlides();
+    setInterval(showSlides, interval); // Auto transition
+  });
+}
+
+document.addEventListener("DOMContentLoaded", autoSlideshow);
