@@ -16,6 +16,16 @@ body {
     /* Font width */
     letter-spacing: 1px;
     /* Font variant */
+    background-image: url(images/bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Overlay backgroud image */
+    background-blend-mode: multiply;
+    /* Background opacity */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 html {
@@ -169,7 +179,7 @@ li a:hover {
 
 .side-nav {
     position: fixed;
-    height: 95%;
+    height: 94%;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -179,8 +189,9 @@ li a:hover {
     padding: 10px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
     /* Border radius, top right, bottom right */
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 .side-nav-logo img {
