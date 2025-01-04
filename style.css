@@ -84,14 +84,7 @@ header h1 {
     width: 10%;
 }
 
-/* Font styling */
-.fontbold {
-    font-weight: bold;
-}
-
-
-h1,
-h2 {
+h1, h2{
     color: #333;
     /* Font weight */
     font-weight: bold;
@@ -100,6 +93,12 @@ h2 {
     /* Font variant */
     /* Center */
     text-align: center;
+    /* Font size */
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 nav {
@@ -761,8 +760,6 @@ button:hover {
 .contentvm h2 {
     /* Font */
     font-family: 'Pacifico', cursive;
-    /* Size */
-    font-size: 40px;
     /* Font weight */
     font-weight: normal;
     /* Font style */
@@ -840,8 +837,16 @@ button:hover {
 .pacificofont {
     font-family: 'Pacifico', cursive;
 }
-
 /* -------------------------------------------- */
+
+/* Active */
+.active {
+    background-color: #ffffff;
+}
+
+.active a {
+    color: #333;
+}
 
 footer {
     padding: 10px;
