@@ -55,13 +55,13 @@ header {
     /* Border radius top part */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    /* Font alignment */    
+    /* Font alignment */
     text-align: center;
     /* Background color */
     /* Font color */
     background-color: rgba(208, 196, 148, 0.6);
     /* Content remains opaque */
-    color: ivory;    
+    color: ivory;
 }
 
 header h1 {
@@ -94,7 +94,8 @@ header h1 {
     width: 10%;
 }
 
-h1, h2{
+h1,
+h2 {
     color: #333;
     /* Font weight */
     font-weight: bold;
@@ -241,7 +242,9 @@ article {
     background-color: ivory;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    /* Border radius bottom part */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -327,7 +330,7 @@ a {
 }
 
 #getAQuoteButton:hover {
-    background-color: var(--secondary-color);
+    background-color: #6ba46e;
 }
 
 /* Menu box */
@@ -563,8 +566,8 @@ a {
 .active,
 .collapsible:hover {
     transition: 0.3s ease-in-out;
-    background-color: #36180a;
-    color: white;
+    background-color: #6ba46e;
+    color: rgb(0, 0, 0);
 }
 
 .faq-content {
@@ -579,7 +582,6 @@ a {
 
 
 /* Profile card */
-
 .ourTeam {
     /* Side by side */
     display: flex;
@@ -622,7 +624,7 @@ a {
 }
 
 .profile-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
     margin: 15px 0 5px;
@@ -640,20 +642,39 @@ a {
     margin-bottom: 15px;
 }
 
-.card {
-    margin: 15px 0;
+.social-links {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Space between icons and text */
 }
 
-.card a {
+.social-links a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: #555;
-    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Space between icon and text */
     transition: color 0.3s ease;
 }
 
-.card a:hover {
-    color: #007BFF;
+.social-links a:hover {
+    color: #0073b1;
+    /* LinkedIn blue for example, change as needed */
+}
+
+.social-links a:hover .fa-twitter {
+    color: #1DA1F2;
+    /* Twitter blue */
+}
+
+.social-links a:hover .fa-instagram {
+    color: #E1306C;
+    /* Instagram pink */
 }
 
 .contact-btn {
@@ -829,16 +850,21 @@ button:hover {
     margin-left: 5px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Ensure flexbox is enabled */
-    align-items: flex-start; /* Align items to the top */
-    flex-wrap: nowrap; /* Prevent wrapping to keep items side by side */
+    display: flex;
+    /* Ensure flexbox is enabled */
+    align-items: flex-start;
+    /* Align items to the top */
+    flex-wrap: nowrap;
+    /* Prevent wrapping to keep items side by side */
 }
 
 .package-image {
     border-radius: 15px;
-    width: 35%; /* Adjust the width of the image */
+    width: 35%;
+    /* Adjust the width of the image */
     height: auto;
-    margin-right: 20px; /* Space between image and text */
+    margin-right: 20px;
+    /* Space between image and text */
     margin-top: 10%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -848,8 +874,10 @@ button:hover {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Allow the details to take up the remaining space */
-    max-width: 65%; /* Limit the width of the details section */
+    flex: 1;
+    /* Allow the details to take up the remaining space */
+    max-width: 65%;
+    /* Limit the width of the details section */
 }
 
 /* Font styling */
@@ -865,6 +893,7 @@ button:hover {
 .pacificofont {
     font-family: 'Pacifico', cursive;
 }
+
 /* -------------------------------------------- */
 
 /* Active */
