@@ -28,6 +28,16 @@ body {
     background-color: rgba(0, 0, 0, 0.5)
 }
 
+/* Variables to color */
+
+:root {
+    --primary-color: #d0c494;
+    --secondary-color: #36180a;
+    --tertiary-color: #f1e5e5;
+    --quaternary-color: ivory;
+    --quinary-color: #000;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -51,7 +61,7 @@ header {
     /* Font color */
     background-color: rgba(208, 196, 148, 0.6);
     /* Content remains opaque */
-    color: #fff;    
+    color: ivory;    
 }
 
 header h1 {
@@ -102,7 +112,7 @@ h2 {
 }
 
 nav {
-    background-color: #d0c494;
+    background-color: var(--primary-color);
     border-radius: 20px;
 }
 
@@ -228,7 +238,7 @@ li a:hover {
 }
 
 article {
-    background-color: #fff;
+    background-color: ivory;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -237,7 +247,7 @@ article {
 
 section,
 .sectionDiv {
-    background-color: #fff;
+    background-color: ivory;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -286,7 +296,7 @@ section,
 }
 
 .menuBox {
-    background-color: #fff;
+    background-color: ivory;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -294,7 +304,7 @@ section,
 }
 
 .mainSectionContainer {
-    background-color: #fff;
+    background-color: ivory;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -312,6 +322,14 @@ a {
     color: #eee;
 }
 
+#getAQuoteButton {
+    background-color: var(--primary-color);
+}
+
+#getAQuoteButton:hover {
+    background-color: var(--secondary-color);
+}
+
 /* Menu box */
 .menu-offering {
     background-color: #d0c494;
@@ -326,7 +344,7 @@ a {
 }
 
 .menu-item {
-    background-color: #fff;
+    background-color: ivory;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -579,7 +597,7 @@ a {
 
 .profile-card {
     width: 300px;
-    background: #ffffff;
+    background: ivory;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -639,7 +657,7 @@ a {
 
 .contact-btn {
     background: #000;
-    color: #fff;
+    color: ivory;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -662,7 +680,7 @@ a {
     max-width: 85%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: ivory;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -814,7 +832,7 @@ button:hover {
 }
 
 .Package-detail {
-    background-color: #fff;
+    background-color: ivory;
     padding: 15px;
     padding-right: 40%;
     height: auto;
@@ -841,7 +859,7 @@ button:hover {
 
 /* Active */
 .active {
-    background-color: #ffffff;
+    background-color: ivory;
 }
 
 .active a {
