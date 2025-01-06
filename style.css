@@ -346,6 +346,7 @@ a {
 .menu-item {
     background-color: ivory;
     padding: 15px;
+    max-width: 20%;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -821,25 +822,34 @@ button:hover {
     flex-wrap: wrap;
 }
 
+.border {
+    background-color: #d0c494;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Ensure flexbox is enabled */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: nowrap; /* Prevent wrapping to keep items side by side */
+}
+
 .package-image {
     border-radius: 15px;
-    width: 35%;
+    width: 35%; /* Adjust the width of the image */
     height: auto;
-    margin-right: 20px;
-    /* Shadow */
+    margin-right: 20px; /* Space between image and text */
+    margin-top: 10%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 .Package-detail {
     background-color: ivory;
     padding: 15px;
-    padding-right: 40%;
-    height: auto;
-    margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+    flex: 1; /* Allow the details to take up the remaining space */
+    max-width: 65%; /* Limit the width of the details section */
 }
 
 /* Font styling */
