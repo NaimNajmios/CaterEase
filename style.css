@@ -824,6 +824,18 @@ button:hover {
     padding: 10px;
 }
 
+/* Links */
+/* i in p tag*/
+.contact a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #0073b1;
+}
+
 /* package and services*/
 .border {
     background-color: #d0c494;
