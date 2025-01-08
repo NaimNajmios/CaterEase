@@ -615,8 +615,7 @@ a {
 }
 
 .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 70%;
     border-radius: 50%;
     margin: 0 auto;
     object-fit: cover;
@@ -645,10 +644,9 @@ a {
 .social-links {
     margin-bottom: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    /* Space between icons and text */
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center align the links */
+    gap: 10px; /* Space between links */
 }
 
 .social-links a {
@@ -657,24 +655,20 @@ a {
     color: #555;
     display: flex;
     align-items: center;
-    gap: 5px;
-    /* Space between icon and text */
+    gap: 5px; /* Space between icon and text */
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #0073b1;
-    /* LinkedIn blue for example, change as needed */
+    color: #0073b1; /* LinkedIn blue for example, change as needed */
 }
 
 .social-links a:hover .fa-twitter {
-    color: #1DA1F2;
-    /* Twitter blue */
+    color: #1DA1F2; /* Twitter blue */
 }
 
 .social-links a:hover .fa-instagram {
-    color: #E1306C;
-    /* Instagram pink */
+    color: #E1306C; /* Instagram pink */
 }
 
 .contact-btn {
